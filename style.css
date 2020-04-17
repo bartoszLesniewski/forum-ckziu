@@ -1,0 +1,81 @@
+/*html, body
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}*/
+
+body
+{
+	font-size: 16px;
+	background-color: #EBEBEB;
+}
+
+.bg-dark
+{
+	background-color: #2A0E64 !important;
+}
+
+@media (max-width: 767px)
+{
+	#menu .nav-item
+	{
+		padding-left: 1.5rem !important;
+	}
+}
+
+table a
+{
+	text-decoration: none;
+	display: block;
+	color: black;
+	
+}
+
+table a:hover
+{
+	color: black;
+}
+
+.media
+{
+	border: 1px solid #e5e4e2;
+	border-radius: 15px;
+	background-color: #e5e4e2;
+}
+
+.media a
+{
+	color: #2A0E64 !important;
+}
+
+.media hr
+{
+	border-top: 1px solid grey;
+}
+
+.sidebar
+{
+	background-color: #210a4f !important;
+	height: 100vh;
+}
+
+.checkList
+{
+	border: 2px solid #ccc; 
+	background-color: white;
+	width:300px; 
+	height: 120px; 
+	overflow-y: scroll;
+	display: none;
+}
+
+#listaU
+{
+	display: none;
+}
+
+#hrefPost
+{
+	 color: white !important;
+}

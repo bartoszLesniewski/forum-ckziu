@@ -1,0 +1,30 @@
+W bazie jest ju¿ utworzone konto admina (login: admin, has³o: admin) i kilka kategorii. Nazwa bazy: forum_ckziu(1) (mo¿na zmieniæ w pliku connect.php).
+
+1. Uczeñ:
+- mo¿e dodawaæ tematy i okreœlaæ ich dostêpnoœæ (ma do wyboru tylko udostêpnienie dla wszystkich, dla uczniów lub dla swojej klasy), nie mo¿e tworzyæ kategorii
+- mo¿e przegl¹daæ tylko te tematy, które s¹ dostêpne dla wszystkich i dla klasy, do której jest przypisany
+- mo¿e edytowaæ swoje posty, ale nie mo¿e edytowaæ tematu, który za³o¿y³
+- przy zak³adaniu konta musi okreœliæ klasê, do której bêdzie przypisany
+- w "panelu ucznia" widoczne s¹ tematy, których jest autorem, tematy dostêpne dla jego klasy
+
+2. Nauczyciel
+- mo¿e dodawaæ tematy i tworzyæ kategorie
+- mo¿e przegl¹daæ tylko te tematy, które s¹ dostêpne dla wszystkich, dla klas, do których jest przypisany, dla nauczycieli, dla uczniów (nie widzi tylko tych, które s¹ dostêpne dla administratorów)
+- przy zak³adaniu konta zaznacza klasy, w których uczy, póŸniej mo¿e je zmodyfikowaæ w panelu nauczyciela (dodaæ nowe, usun¹æ obecne itp.) w zak³adce "moje klasy"
+- mo¿e edytowaæ swoje tematy i posty oraz tematy i posty uczniów
+- tematy, które sam za³o¿y³ s¹ widoczne w "panelu nauczyciela" w zak³adce "moje tematy"
+- w "panelu nauczyciela" ma te¿ zak³adkê "tematy klasami", gdzie mo¿e wybraæ klasê (z tych, do których jest przypisany) i zobaczyæ tematy które s¹ dostêpne tylko dla tej klasy
+
+3. Administrator
+- mo¿e praktycznie wszystko: zarz¹dzaæ u¿ytkownikami (np. edytowaæ ich dane, usuwaæ, zmieniaæ typy kont, aktywowaæ konta), zarz¹dzaæ klasami (edytowaæ nazwy, usuwaæ), zarz¹dzaæ kategoriami, edytowaæ wszystkie tematy i posty itp.
+ 
+Strona g³ówna: wyœwietlane s¹ tematy dostêpne dla aktualnie zalogowanego u¿ytkownika w kolejnoœci od najnowszych (jeœli ktoœ nie jest zalogowany, to widzi tylko te tematy, które s¹ dostêpne dla "wszystkich"). Dla konta nauczyciela wyœwietlane s¹ te tematy, które sam za³o¿y³, tematy, które s¹ okreœlone jako dostêpne dla nauczycieli, dla uczniów lub dla klas, do których jest przypisany. Dla konta ucznia wyœwietlane s¹ tematy dostêpne dla klasy, do której jest przypisany, te dostêpne dla "wszystkich" i dla "uczniów". Dla admina – wszystkie tematy.
+
+Kategorie: dla ka¿dego typu u¿ytkownika wyœwietlane s¹ wszystkie kategorie, ale liczba tematów i ostatnia aktywnoœæ jest uzale¿niona od tematów, do których ma dostêp (czyli u¿ytkownik widzi, jakie s¹ dostêpne typy kategorii, ale nie widzi wszystkich tematów w danej kategorii, tylko te, które s¹ dla niego dostêpne)
+
+Dodawanie tematu – dostêpne tylko dla zalogowanych u¿ytkowników. Trzeba okreœliæ, do jakiej z dostêpnych kategorii temat bêdzie przypisany. Mo¿na te¿ okreœliæ dostêp do tematu, wybieraj¹c jedn¹ z dostêpnych opcji (wszyscy, nauczyciele, uczniowie, administratorzy, wybrana klasa/klasy - do zaznaczenia które)
+
+Dodawanie kategorii – opcja dostêpna tylko dla administratora i nauczycieli
+
+Edycja postów i tematów: admin mo¿e edytowaæ wszystko, nauczyciel tylko tematy i posty swoje oraz uczniów, uczeñ tylko swoje posty.
+
